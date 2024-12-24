@@ -3,9 +3,15 @@ public class Main {
 
         System.out.println("\t- - - PROGRAM STARTED - - -");
 
-        instructions();
+//        instructions();
+
+        Shipment first = new Shipment();
+
+        System.out.println(first.getIncoterms());
 
         System.out.println("\t- - - PROGRAM ENDED - - -");
+
+//        test
     }
 
     public static void instructions() {
