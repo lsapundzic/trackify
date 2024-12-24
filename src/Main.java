@@ -1,7 +1,6 @@
 public class Main {
     public static void main(String[] args) {
 
-//        Experimental
         System.out.println("\t- - - PROGRAM STARTED - - -");
 
         instructions();
@@ -10,6 +9,9 @@ public class Main {
     }
 
     public static void instructions() {
-        System.out.println("Instructions: ");
+
+        String inst = "This is a placeholder for program instructions.";
+
+        System.out.println(inst);
     }
 }
