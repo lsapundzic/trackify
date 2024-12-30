@@ -3,16 +3,10 @@ public class Shipment {
     private String forwarder;
     private String incoterms;
 
-    Shipment() {
+    Shipment (String forwarder, String incoterms) {
         this.id = generateID();
-        this.forwarder = "unknown";
-        this.incoterms = "unassigned";
-    }
-
-    Shipment (int id, String forwarder, String incoterms) {
-        this.id = generateID();
-        this.forwarder = forwarder;
-        this.incoterms = incoterms;
+        setForwarder(forwarder);
+        setIncoterms(incoterms);
     }
 
     public int getId() {
@@ -36,6 +30,10 @@ public class Shipment {
     }
 
     private int generateID() {
-        return 5;
-    }
+      final int placeholder = 5;
+
+        System.out.println("Generated ID is " + placeholder);
+
+        return placeholder;
+    };
 }

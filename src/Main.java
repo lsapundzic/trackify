@@ -3,21 +3,9 @@ public class Main {
 
         System.out.println("\t- - - PROGRAM STARTED - - -");
 
-//        instructions();
+        Shipment container = new Shipment("K+N", "FOB");
 
-        Shipment first = new Shipment();
-
-        System.out.println(first.getIncoterms());
-
-        System.out.println("\t- - - PROGRAM ENDED - - -");
-
-//        test
+        System.out.println(container.getIncoterms() + " " + container.getForwarder());
     }
 
-    public static void instructions() {
-
-        String inst = "This is a placeholder for program instructions.";
-
-        System.out.println(inst);
-    }
 }
