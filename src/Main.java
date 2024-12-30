@@ -8,9 +8,9 @@ public class Main {
         Scanner input = new Scanner(System.in);
 
         System.out.println("Enter something: ");
-        input.next();
+        String userInput = input.next();
 
-        System.out.println("Hello, the input is: " + input);
+        System.out.println("Hello, the input is: " + userInput);
 
         input.close();
     }
