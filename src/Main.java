@@ -1,11 +1,18 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
 
         System.out.println("\t- - - PROGRAM STARTED - - -");
 
-        Shipment container = new Shipment("K+N", "FOB");
+        Scanner input = new Scanner(System.in);
 
-        System.out.println(container.getIncoterms() + " " + container.getForwarder());
+        System.out.println("Enter something: ");
+        input.next();
+
+        System.out.println("Hello, the input is: " + input);
+
+        input.close();
     }
 
 }
